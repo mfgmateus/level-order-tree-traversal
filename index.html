@@ -21,7 +21,7 @@
 
 
 		<meta content="authenticity_token" name="csrf-param" />
-<meta content="oTWCdl5q/6vHC5EL40VEypITfCVmxvZtTCHFrAkX6vU=" name="csrf-token" />
+<meta content="HnsWXOJnniP3eF1RhjVooo2+JWL2TIrTo4WZ/WzHMRE=" name="csrf-token" />
 		<style id="user-css-output" type="text/css"></style>
 	</head>
 	<body>
@@ -29,49 +29,8 @@
 			<div class="slides">
 				<section data-id="8d0e7034adc45408ec80a0637ae673f5"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 250px; height: auto;" data-block-id="7adfb1655171209fb0b12d13bc566878"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
 <h1>Percurso em Árvore por Nível</h1>
-</div></div></section><section data-id="32ae72a2d0fc32c74edf0de8e0f7ace9"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 200px; height: auto;" data-block-id="3673cf910c9d1f8613f20f840952eef4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: justify;">
-<p>Em uma árvore binária, o percurso por nível é um percurso denominado breadth first search (BFS) ou em português, busca em largura, a qual seria não-recursiva por natureza. Este percurso utiliza uma fila ao invés de pilha para armazenar os próximos 2 nodos que devem ser pesquisados (filho à esquerda e à direita).</p>
-
-<p>Esta é a razão pela qual você deve percorrer os nodos na ordem FIFO ao invés da ordem LIFO, obtendo desta forma a recursão.<br>
- </p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="width: 860px; left: 49px; top: 104px; height: auto;" data-block-id="f07f0303389e020c873ad58d508b7dfe"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;">
-<h2>Problema</h2>
-</div></div></section><section data-id="00d7abdd288c512fdc9a84f531362e91"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 171px; height: auto;" data-block-id="0b8e754eff8b8a34940c2b3947056b26"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: justify; z-index: 10;">
-<p style="text-align:left">Portanto nossa tarefa aqui, após algumas operações de inserção sobre uma árvore binária de busca (pesquisa), é imprimir o percurso por nível sobre estes nodos. Por exemplo, uma entrada com a sequência de valores inteiros: 8 3 10 14 6 4 13 7 1 resultará na seguinte árvore:</p>
-
-<p style="text-align:left"> </p>
-
-<p style="text-align:left"> </p>
-
-<p style="text-align:left"> </p>
-
-<p style="text-align:left"> </p>
-
-<p style="text-align:left"> </p>
-
-<p style="text-align:left"> </p>
-
-<p style="text-align:left"><span style="text-align:left">Com a saída de uma listagem por nível: 8 3 10 1 6 14 4 7 13</span></p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="width: 860px; left: 49px; top: 104px; height: auto;" data-block-id="dc1449ecae69b23cb5c6a2db042e4a06"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
-<h2>Problema</h2>
-</div></div>
-<div class="sl-block" data-block-type="image" data-block-id="7fb70ab2af345bc3d0fa473c35948cca" style="min-width: 30px; min-height: 30px; width: 360px; height: 250.364px; left: 252px; top: 391px;"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="220" data-natural-height="153" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/469557/images/3253922/1466.png"></div></div></section><section data-id="d35ce206f595639422627ceefa188a11"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 171px; height: auto;" data-block-id="50fa2312cd92b60831da4b9005a68945"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: justify; z-index: 10;">
-<p style="text-align:left">A entrada contém vários casos de teste. A primeira linha da entrada contém um inteiro <strong>C</strong> (C ≤ 1000), indicando o número de casos de teste que virão a seguir. Cada caso de teste é composto por 2 linhas. A primeira linha contém um inteiro <strong>N</strong> (1 ≤ N ≤ 500) que indica a quantidade de números que deve compor cada árvore e a segunda linha contém <strong>N</strong> inteiros distintos e não negativos, separados por um espaço em branco.</p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="width: 860px; left: 49px; top: 104px; height: auto;" data-block-id="074b4ef87aa9c502a25936c87f7931d2"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
-<h2>Problema - <span>Entrada</span>
-</h2>
-</div></div></section><section data-id="8f4419d07be5dcd99233ddb7c1bb51fb"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 171px; height: auto;" data-block-id="9e376c0d86e08f3cd3c80e9831132bfc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: justify; z-index: 10;">
-<p>Para cada caso de teste de entrada você deverá imprimir a mensagem "Case n:", onde n indica o número do caso de teste seguido por uma linha contendo a listagem por nível dos nodos da árvore, conforme o exemplo abaixo. </p>
-
-<p>Obs: Não deve haver espaço em branco após o último item de cada linha e há uma linha em branco após cada caso de teste, inclusive após o último. A árvore resultante não terá nodos repetidos e também não terá mais do que 500 níveis.</p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="width: 860px; left: 49px; top: 104px; height: auto;" data-block-id="45554f2818238537fd25df7eeb8fc5c5"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
-<h2>Problema - <span>Saída</span>
-</h2>
-</div></div></section><section data-id="f10148631d3d9fda51d6d8248dfe462c"><div class="sl-block" data-block-type="text" style="width: 860px; left: 49px; top: 104px; height: auto;" data-block-id="3c2def3f8f120b6d8b33339d23e28d65"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+</div></div></section><section data-id="5b2116d60f519460815887d9485d3c68"><div class="sl-block" data-block-type="iframe" style="min-width: 30px; min-height: 30px; width: 360px; height: 300px; left: 300px; top: 200px;" data-block-id="186a9d0ee35e0082e1dc5ce85c5a034f"><div class="sl-block-content" style="z-index: 11;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock"></iframe></div></div>
+<div class="sl-block" data-block-type="iframe" style="min-width: 30px; min-height: 30px; width: 1062px; height: 700px; left: -102px; top: 0px;" data-block-id="4fc28e6b18bc7f0c37d95a50ab6f45d9"><div class="sl-block-content" style="z-index: 12;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://www.urionlinejudge.com.br/judge/pt/problems/view/1466"></iframe></div></div></section><section data-id="f10148631d3d9fda51d6d8248dfe462c"><div class="sl-block" data-block-type="text" style="width: 860px; left: 49px; top: 104px; height: auto;" data-block-id="3c2def3f8f120b6d8b33339d23e28d65"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
 <h2>Problema - <span>Exemplo</span>
 </h2>
 </div></div>
@@ -330,7 +289,7 @@ void addNode(BinaryTree* bt, Node* n){
 }</code></pre></div></div></section><section data-id="b4448e0ecf98f0d2af019655ce0b38af"><div class="sl-block" data-block-type="text" style="width: 860px; left: 49px; top: 104px; height: auto;" data-block-id="f96240e1670414f84a3b7eddf4c6550f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;" dir="ui">
 <h2>Submissão da Solução</h2>
 </div></div>
-<div class="sl-block" data-block-type="image" data-block-id="fab6513a5452406c497a3ca977252683" style="min-width: 30px; min-height: 30px; width: 578.741px; height: 335px; left: 148px; top: 224px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="501" data-natural-height="290" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/469557/images/3254444/Picture1.png"></div></div></section><section data-id="9a104e3cbb342217ea5bccb4a52a924b"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="943c5e95b04faabfdb9d05aa7d0196b1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<div class="sl-block" data-block-type="image" data-block-id="fab6513a5452406c497a3ca977252683" style="min-width: 30px; min-height: 30px; width: 578.741px; height: 335px; left: 148px; top: 224px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="501" data-natural-height="290" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/469557/images/3254444/Picture1.png"></div></div></section><section data-id="55085107964f13a00e059691fbea5752"><div class="sl-block" data-block-type="iframe" style="min-width: 30px; min-height: 30px; width: 1006px; height: 708px; left: -28px; top: 0px;" data-block-id="6aa313fb7d56b4854a004bac90b04b45"><div class="sl-block-content" style="z-index: 11;"><iframe webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock" data-src="https://www.urionlinejudge.com.br/judge/pt/runs?problem_id=1466"></iframe></div></div></section><section data-id="9a104e3cbb342217ea5bccb4a52a924b"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="943c5e95b04faabfdb9d05aa7d0196b1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
 <h1>Obrigado!</h1>
 </div></div></section><section data-id="0747d4bf9c8d84631240a99730829608"><div class="sl-block" data-block-type="text" style="width: 831px; left: 49px; top: 171px; height: auto;" data-block-id="16e169db408a1d969470d7f922a4ace2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: justify; z-index: 11;">
 <p>https://github.com/mfgmateus/level-order-tree-traversal</p>
@@ -344,7 +303,7 @@ void addNode(BinaryTree* bt, Node* n){
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":469557,"username":"mfgmateus","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7e98d59d2dd734c625a6459c7029512b?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":310893,"present_controls":true,"present_upsizing":true,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null},"email":"mfgmateus1996@gmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":860618,"slug":"1466-percurso-em","title":"1466 - Percurso em","description":"","visibility":"all","published_at":"2016-11-21T10:10:08.276Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/2ac7fdc3596f8de223a6160a8d158753/thumb.jpg","view_count":1,"user":{"id":469557,"username":"mfgmateus","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7e98d59d2dd734c625a6459c7029512b?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":310893,"present_controls":true,"present_upsizing":true,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":null,"slide_number":null,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1479732257961,"font_typekit":null,"font_google":null,"access_token":"AjtoB6PgsAjHbaReEFbunDCjySzr","notes":{}}};
+	var SLConfig = {"current_user":{"id":469557,"username":"mfgmateus","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7e98d59d2dd734c625a6459c7029512b?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":310893,"present_controls":true,"present_upsizing":true,"present_notes":true,"editor_grid":true,"editor_snap":true,"developer_mode":false,"speaker_layout":null},"email":"mfgmateus1996@gmail.com","notify_on_receipt":true,"billing_address":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1},"deck":{"id":860618,"slug":"1466-percurso-em","title":"1466 - Percurso em","description":"","visibility":"all","published_at":"2016-11-21T10:10:08.276Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/2ac7fdc3596f8de223a6160a8d158753/thumb.jpg","view_count":1,"user":{"id":469557,"username":"mfgmateus","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/7e98d59d2dd734c625a6459c7029512b?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":310893,"present_controls":true,"present_upsizing":true,"present_notes":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"share_notes":null,"slide_number":null,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1479769729706,"font_typekit":null,"font_google":null,"access_token":"AjtoB6PgsAjHbaReEFbunDCjySzr","notes":{}}};
 </script>
 
 		<script>
